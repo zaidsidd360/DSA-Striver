@@ -26,6 +26,7 @@ public class NumberCrown {
         Scanner s = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int N = s.nextInt();
-        printNumberCrown(N);
+        if(N < 1) System.out.println("N must be greater than 0!");
+        else printNumberCrown(N);
     }
 }
