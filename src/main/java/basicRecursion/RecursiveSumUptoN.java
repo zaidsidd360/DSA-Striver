@@ -15,4 +15,5 @@ public class RecursiveSumUptoN {
         int n = 100;
         printSumRecursive(n, 0);
     }
+
 }

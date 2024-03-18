@@ -1,5 +1,7 @@
 package main.java.sorting.sorting1;
 
+import main.java.sorting.Swapper;
+
 import java.util.Arrays;
 
 public class BubbleSort {
@@ -14,9 +16,7 @@ public class BubbleSort {
             boolean didSwap = false;
             for(int j = i + 1; j < arr.length; j++) {
                 if(arr[i] > arr[j]) {
-                    int temp = arr[i];
-                    arr[i] = arr[j];
-                    arr[j] = temp;
+                    Swapper.swap(arr, i, j);
                     didSwap = true;
                 }
             }

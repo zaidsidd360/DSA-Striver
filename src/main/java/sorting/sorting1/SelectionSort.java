@@ -1,5 +1,7 @@
 package main.java.sorting.sorting1;
 
+import main.java.sorting.Swapper;
+
 import java.util.Arrays;
 
 public class SelectionSort {
@@ -10,9 +12,7 @@ public class SelectionSort {
             for(int j = i + 1; j < arr.length; j++)
                 if(arr[j] < arr[minValIndex])
                     minValIndex = j;
-            int temp = arr[i];
-            arr[i] = arr[minValIndex];
-            arr[minValIndex] = temp;
+            Swapper.swap(arr, i, minValIndex);
         }
     }
 

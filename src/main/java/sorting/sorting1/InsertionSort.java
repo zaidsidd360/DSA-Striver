@@ -1,5 +1,7 @@
 package main.java.sorting.sorting1;
 
+import main.java.sorting.Swapper;
+
 import java.util.Arrays;
 
 public class InsertionSort {
@@ -8,9 +10,7 @@ public class InsertionSort {
         for(int i = 0; i < arr.length; i++) {
             int j = i;
             while(j > 0 && arr[j - 1] > arr[j]) {
-                int temp = arr[j];
-                arr[j] = arr[j - 1];
-                arr[j - 1] = temp;
+                Swapper.swap(arr, j, j - 1);
                 j--;
             }
 

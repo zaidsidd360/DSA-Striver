@@ -15,4 +15,5 @@ public class RecursivePalindrome {
         String str = "racecar";
         System.out.println(checkPalindrome(str, 0, str.length() - 1));
     }
+
 }

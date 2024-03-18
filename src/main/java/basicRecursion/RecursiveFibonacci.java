@@ -13,16 +13,12 @@ public class RecursiveFibonacci {
         printFibonacci(n - 1, second, next);
     }
 
-    public static int fibonacci(int n) {
-        if(n <= 1) return n;
-        return fibonacci(n - 1) + fibonacci(n - 2);
+    public static void fibonacci(int n) {
+        printFibonacci(n, 0, 1);
     }
 
     public static void main(String[] args) {
-        printFibonacci(10, 0, 1);
-        System.out.println();
-        for(int i = 0; i < 10; i++) {
-            System.out.print(fibonacci(i) + " ");
-        }
+        fibonacci(10);
     }
+
 }
