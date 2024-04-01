@@ -22,10 +22,9 @@ public class SortArrayOfZeroOneTwo {
         }
     }
     
-    // Optimal - Dutch National Flag (DNF) algorithm approach:
+    // Optimal - Dutch National Flag (DNF) / 3-way-partition algorithm approach:
     public static void sortArrayOfZeroOneTwo2(int[] arr) {
-        int low = 0, mid = 0;
-        int high = arr.length - 1;
+        int low = 0, mid = 0, high = arr.length - 1;
         while(mid <= high) {
             if(arr[mid] == 0) {
                 Swapper.swap(arr, mid, low);

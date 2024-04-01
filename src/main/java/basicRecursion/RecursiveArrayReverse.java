@@ -1,5 +1,7 @@
 package main.java.basicRecursion;
 
+import main.java.sorting.Swapper;
+
 import java.util.Arrays;
 
 public class RecursiveArrayReverse {
@@ -7,10 +9,8 @@ public class RecursiveArrayReverse {
     public static void reverseArrayRecursive(int[] arr, int i, int j) {
         // Base condition
         if(i >= j) return;
-
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
+        
+        Swapper.swap(arr, i, j);
         reverseArrayRecursive(arr, ++i, --j);
     }
 
