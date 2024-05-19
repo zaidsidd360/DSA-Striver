@@ -30,4 +30,18 @@ public class Utils {
             j--;
         }
     }
+    
+    public static void printMatrix(int[][] matrix) {
+        for(int[] row: matrix) {
+            System.out.println(Arrays.toString(row));
+        }
+    }
+    
+    public static void copyMatrix(int[][] from, int[][] to) {
+        for(int i = 0; i < from.length; i++) {
+            for(int j = 0; j < from[0].length; j++) {
+                to[i][j] = from[i][j];
+            }
+        }
+    }
 }

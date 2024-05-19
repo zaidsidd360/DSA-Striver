@@ -1,8 +1,8 @@
 package main.java.arrays.medium;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
+import main.java.arrays.Utils;
 
 public class SetMatrixZero {
     
@@ -78,12 +78,6 @@ public class SetMatrixZero {
         }
     }
     
-    public static void printMatrix(int[][] matrix) {
-        for(int[] row: matrix) {
-            System.out.println(Arrays.toString(row));
-        }
-    }
-    
     public static void main(String[] args) {
         int[][] matrix = {
                 {0, 1, 2, 0},
@@ -91,9 +85,9 @@ public class SetMatrixZero {
                 {1, 3, 1, 5}
         };
         System.out.println("Before setting matrix zeros:");
-        printMatrix(matrix);
+        Utils.printMatrix(matrix);
         setMatrixZero3(matrix);
         System.out.println("After setting matrix zeros:");
-        printMatrix(matrix);
+        Utils.printMatrix(matrix);
     }
 }
